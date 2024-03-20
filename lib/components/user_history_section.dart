@@ -1,0 +1,108 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_sample/components/checkin_history_item.dart';
+import 'package:flutter_sample/components/colors.dart';
+import 'package:flutter_sample/components/gap.dart';
+import 'package:flutter_sample/components/messages.dart';
+import 'package:flutter_sample/components/play_history_item.dart';
+import 'package:flutter_sample/components/sizes.dart';
+import 'package:flutter_sample/components/text_styles.dart';
+
+class UserHistorySection extends StatelessWidget {
+  const UserHistorySection({
+    super.key,
+    required this.exampleGameTilte,
+    required this.examplePlayHistory,
+    required this.exampleEventTilte,
+  });
+
+  final String exampleGameTilte;
+  final String examplePlayHistory;
+  final String exampleEventTilte;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: MyColors.white,
+        borderRadius: BorderRadius.circular(Sizes.p16),
+      ),
+      child: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(Sizes.p20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  height: Sizes.p30,
+                  child: Row(
+                    children: [
+                      const Text(
+                        Messages.recentHistories,
+                        style: MyTextStyles.mBold,
+                      ),
+                      const Spacer(),
+                      Icon(
+                        Icons.info_outline,
+                        size: Sizes.p20,
+                        color: MyColors.darkGrey,
+                      ),
+                    ],
+                  ),
+                ),
+                Gap.h5,
+                const Text(
+                  Messages.today,
+                  style: MyTextStyles.lBold,
+                ),
+                Gap.h10,
+                SizedBox(
+                  height: Sizes.p80,
+                  child: PlayHistoryItem(
+                    gameTitle: exampleGameTilte,
+                    value: examplePlayHistory,
+                  ),
+                ),
+                Gap.h20,
+                SizedBox(
+                  height: Sizes.p80,
+                  child: CheckinHistoryItem(
+                    eventTitle: exampleEventTilte,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Divider(
+            thickness: Sizes.p1point5,
+            height: Sizes.p1point5,
+            color: MyColors.lightGrey,
+          ),
+          Container(
+            padding: const EdgeInsets.fromLTRB(
+              Sizes.p20,
+              Sizes.p14,
+              Sizes.p20,
+              Sizes.p14,
+            ),
+            child: Row(
+              children: [
+                const Spacer(),
+                Text(
+                  Messages.seeMore,
+                  style: MyTextStyles.mGrey,
+                ),
+                Gap.w5,
+                Icon(
+                  Icons.arrow_forward_ios_rounded,
+                  size: Sizes.p14,
+                  color: MyColors.darkGrey,
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
