@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_sample/components/colors.dart';
-import 'package:flutter_sample/components/messages.dart';
-import 'package:flutter_sample/components/my_page.dart';
-import 'package:flutter_sample/components/sizes.dart';
+import 'package:flutter_sample/common/colors.dart';
+import 'package:flutter_sample/common/messages.dart';
+import 'package:flutter_sample/pages/my_page.dart';
+import 'package:flutter_sample/common/sizes.dart';
 
 // 選択中のタブインデックス
 final tabIndexProvider = StateProvider((ref) {

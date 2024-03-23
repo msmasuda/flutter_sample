@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sample/components/colors.dart';
-import 'package:flutter_sample/components/sizes.dart';
+import 'package:flutter_sample/common/colors.dart';
+import 'package:flutter_sample/common/sizes.dart';
 
 class MyTextStyles {
   // XLサイズ 太字

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sample/components/checkin_history_item.dart';
-import 'package:flutter_sample/components/colors.dart';
-import 'package:flutter_sample/components/gap.dart';
-import 'package:flutter_sample/components/messages.dart';
-import 'package:flutter_sample/components/play_history_item.dart';
-import 'package:flutter_sample/components/sizes.dart';
-import 'package:flutter_sample/components/text_styles.dart';
+import 'package:flutter_sample/widgets/my_page/checkin_history_item.dart';
+import 'package:flutter_sample/common/colors.dart';
+import 'package:flutter_sample/common/gap.dart';
+import 'package:flutter_sample/common/messages.dart';
+import 'package:flutter_sample/widgets/my_page/play_history_item.dart';
+import 'package:flutter_sample/common/sizes.dart';
+import 'package:flutter_sample/common/text_styles.dart';
 
 class UserHistorySection extends StatelessWidget {
   const UserHistorySection({

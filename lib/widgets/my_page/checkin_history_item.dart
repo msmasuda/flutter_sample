@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sample/components/colors.dart';
-import 'package:flutter_sample/components/gap.dart';
-import 'package:flutter_sample/components/images.dart';
-import 'package:flutter_sample/components/messages.dart';
-import 'package:flutter_sample/components/text_styles.dart';
+import 'package:flutter_sample/common/colors.dart';
+import 'package:flutter_sample/common/gap.dart';
+import 'package:flutter_sample/common/images.dart';
+import 'package:flutter_sample/common/messages.dart';
+import 'package:flutter_sample/common/text_styles.dart';
 
 /// イベント参加の履歴 1つ分
 class CheckinHistoryItem extends StatelessWidget {

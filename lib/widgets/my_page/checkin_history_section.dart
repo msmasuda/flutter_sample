@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sample/components/colors.dart';
-import 'package:flutter_sample/components/images.dart';
-import 'package:flutter_sample/components/messages.dart';
-import 'package:flutter_sample/components/sizes.dart';
-import 'package:flutter_sample/components/text_styles.dart';
+import 'package:flutter_sample/common/colors.dart';
+import 'package:flutter_sample/common/images.dart';
+import 'package:flutter_sample/common/messages.dart';
+import 'package:flutter_sample/common/sizes.dart';
+import 'package:flutter_sample/common/text_styles.dart';
 
-/// 遊んだゲームの履歴 セクション
-class PlayHistorySection extends StatelessWidget {
-  const PlayHistorySection({
+/// イベント参加の履歴 セクション
+class CheckinHistorySection extends StatelessWidget {
+  const CheckinHistorySection({
     super.key,
   });
 
@@ -22,7 +22,7 @@ class PlayHistorySection extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Image.asset(Images.games.path),
+            Image.asset(Images.map.path),
             Divider(
               thickness: Sizes.p1point5,
               height: Sizes.p1point5,
@@ -38,7 +38,7 @@ class PlayHistorySection extends StatelessWidget {
               child: Row(
                 children: [
                   const Text(
-                    Messages.historiesOfPlay,
+                    Messages.historiesOfcheckin,
                     style: MyTextStyles.mBold,
                   ),
                   const Spacer(),

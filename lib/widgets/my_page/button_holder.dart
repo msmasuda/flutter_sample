@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sample/components/colors.dart';
-import 'package:flutter_sample/components/sizes.dart';
+import 'package:flutter_sample/common/colors.dart';
+import 'package:flutter_sample/common/sizes.dart';
 
 /// ボタンを横に並べるホルダー
 class ButtonHolder extends StatelessWidget {
