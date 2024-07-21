@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "staging": "join-us-9bf96",
+    "default": "join-us-9bf96"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
